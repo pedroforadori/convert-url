@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: 0;
+}
+html, body, #app {
+    height: 100%;
+}
+body, input, button {
+    font: 14px 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+button {
+    cursor: pointer;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(-45deg, #fff 25%, #eee 100%);
+    background-attachment: fixed;
+}
+
+#app {
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.header {
+    background-color: #000;
+    height: 40px;
+}
+
+.logo {
+    width: 40px;
+}
+
+.tabs{
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    font-size: 19px;
+}
+
+.tabs input {
+    margin: 3px 3px 0 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    margin-top: 20px;
+    width: 90%;
+    padding: 20px;
+    background: rgb(223, 223, 223);
+    border-radius: 15px; 
+}
+
+.form input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0 0;
+    box-sizing: border-box;
+    border: 0;
+  }
+
+  .custom-select {
+    margin-top: 10px;
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: #fff;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000 transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000 transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: rgb(102, 102, 102);
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  } 
+
+  .buttonSend {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    border: 0;
+  }
+
+  .form input[type=submit] {
+    
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background: rgb(204, 0, 0);
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    width: 100%;
+  }
+
+  .type,
+  .social,
+  .url,
+  .position,
+  .edit,
+  .campaign,
+  .objective,
+  .segmentation,
+  .subSegmentation,
+  .format,
+  .nameNew,
+  .buttonSend,
+  .typeCall,
+  .response,
+  .line,
+  .call,
+  .formatPost,
+  .detail,
+  .formatAd,
+  .plataform,
+  .dimension,
+  .nameProgram,
+  #copy {
+    display: none;
+  }
+
+  .enable {
+      display: block;
+  }
